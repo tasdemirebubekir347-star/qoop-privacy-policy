@@ -5,64 +5,41 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Delete your Qoop account</title>
   <style>
-    :root {
-      color-scheme: light dark;
-      --bg: #ffffff;
-      --text: #111111;
-      --muted: #555555;
-      --link: #0095f6;
-      --card: #f7f7f7;
-      --border: #e5e5e5;
-    }
+    :root { color-scheme: light dark; --bg:#fff; --text:#111; --muted:#555; --link:#0095f6; --card:#f7f7f7; --border:#e5e5e5; }
     @media (prefers-color-scheme: dark) {
-      :root {
-        --bg: #000000;
-        --text: #f5f5f5;
-        --muted: #b0b0b0;
-        --card: #121212;
-        --border: #262626;
-      }
+      :root { --bg:#000; --text:#f5f5f5; --muted:#b0b0b0; --card:#121212; --border:#262626; }
     }
-    body {
-      margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.6;
-    }
-    main {
-      max-width: 720px;
-      margin: 0 auto;
-      padding: 32px 20px 48px;
-    }
-    h1, h2 { line-height: 1.25; }
-    h1 { font-size: 1.75rem; margin-bottom: 0.5rem; }
-    h2 { font-size: 1.15rem; margin-top: 2rem; }
-    p, li { color: var(--muted); }
-    a { color: var(--link); }
-    ol, ul { padding-left: 1.25rem; }
-    .card {
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 16px 18px;
-      margin: 20px 0;
-    }
-    .lang-switch { margin-bottom: 24px; font-size: 0.95rem; }
-    hr { border: none; border-top: 1px solid var(--border); margin: 32px 0; }
+    body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; background:var(--bg); color:var(--text); line-height:1.6; }
+    main { max-width:720px; margin:0 auto; padding:32px 20px 48px; }
+    h1,h2 { line-height:1.25; }
+    h1 { font-size:1.75rem; margin-bottom:.5rem; }
+    h2 { font-size:1.15rem; margin-top:2rem; }
+    p,li { color:var(--muted); }
+    a { color:var(--link); }
+    ol, ul { padding-left:1.25rem; }
+    .card { background:var(--card); border:1px solid var(--border); border-radius:12px; padding:16px 18px; margin:20px 0; }
+    .lang-switch { margin-bottom:24px; font-size:.95rem; display:flex; flex-wrap:wrap; gap:.4rem .85rem; }
+    .lang-switch a { text-decoration:none; }
+    .lang-switch a.is-active { font-weight:700; color:var(--text); text-decoration:underline; }
+    .lang-panel { display:none; }
+    .lang-panel.is-active { display:block; }
+
   </style>
 </head>
 <body>
   <main>
-    <p class="lang-switch"><a href="#en">English</a> · <a href="#tr">Türkçe</a></p>
+    <p class="lang-switch" role="navigation">
+      <a href="#en">English</a>
+      <a href="#tr">Türkçe</a>
+      <a href="#de">Deutsch</a>
+      <a href="#fr">Français</a>
+      <a href="#es">Español</a>
+    </p>
 
-    <section id="en" lang="en">
+    <section id="en" class="lang-panel" lang="en">
+
       <h1>Delete your Qoop account</h1>
-      <p>
-        You can permanently delete your Qoop account and associated data from inside the app.
-        This page explains how account deletion works and what is removed.
-      </p>
-
+      <p>You can permanently delete your Qoop account and associated data from inside the app. This page explains how account deletion works and what is removed.</p>
       <div class="card">
         <strong>In-app deletion (recommended)</strong>
         <ol>
@@ -72,7 +49,6 @@
           <li>Confirm the warning and complete verification if prompted.</li>
         </ol>
       </div>
-
       <h2>What is deleted</h2>
       <ul>
         <li>Your profile, username reservation, and account settings</li>
@@ -80,36 +56,20 @@
         <li>Direct messages and clan memberships tied to your account</li>
         <li>Followers / following relationships and blocks</li>
       </ul>
-
       <h2>What may remain temporarily</h2>
       <ul>
         <li>Backups or logs retained for security, fraud prevention, or legal compliance for a limited period</li>
         <li>Content already shared with other users (for example, messages they received)</li>
         <li>Active App Store / Google Play subscriptions — cancel separately in your store settings</li>
       </ul>
-
       <h2>Need help?</h2>
-      <p>
-        If you cannot access the app, email
-        <a href="mailto:joinqoop.support@gmail.com?subject=Qoop%20account%20deletion%20request">joinqoop.support@gmail.com</a>
-        from the address linked to your account.
-      </p>
-      <p>
-        <a href="https://tasdemirebubekir347-star.github.io/qoop-privacy-policy/">Privacy Policy</a>
-        ·
-        <a href="https://tasdemirebubekir347-star.github.io/legal/">Terms of Service</a>
-      </p>
+      <p>If you cannot access the app, email <a href="mailto:joinqoop.support@gmail.com?subject=Qoop%20account%20deletion%20request">joinqoop.support@gmail.com</a> from the address linked to your account.</p>
+      <p><a href="https://tasdemirebubekir347-star.github.io/qoop-privacy-policy/">Privacy Policy</a> · <a href="https://tasdemirebubekir347-star.github.io/legal/">Terms of Service</a></p>
     </section>
+    <section id="tr" class="lang-panel" lang="tr">
 
-    <hr />
-
-    <section id="tr" lang="tr">
       <h1>Qoop hesabını silme</h1>
-      <p>
-        Qoop hesabını ve ilişkili verilerini uygulama içinden kalıcı olarak silebilirsin.
-        Bu sayfa silme sürecini ve nelerin kaldırıldığını açıklar.
-      </p>
-
+      <p>Qoop hesabını ve ilişkili verilerini uygulama içinden kalıcı olarak silebilirsin. Bu sayfa silme sürecini ve nelerin kaldırıldığını açıklar.</p>
       <div class="card">
         <strong>Uygulama içinden silme (önerilen)</strong>
         <ol>
@@ -119,7 +79,6 @@
           <li>Uyarıyı onayla; istenirse doğrulamayı tamamla.</li>
         </ol>
       </div>
-
       <h2>Silinen veriler</h2>
       <ul>
         <li>Profil, kullanıcı adı rezervasyonu ve hesap ayarları</li>
@@ -127,26 +86,135 @@
         <li>Doğrudan mesajlar ve klan üyelikleri</li>
         <li>Takipçi / takip ilişkileri ve engellemeler</li>
       </ul>
-
       <h2>Geçici olarak kalabilecekler</h2>
       <ul>
         <li>Güvenlik, dolandırıcılık önleme veya yasal uyum için sınırlı süre tutulan yedekler</li>
         <li>Diğer kullanıcılarla paylaşılmış içerikler (ör. aldıkları mesajlar)</li>
         <li>Aktif App Store / Google Play abonelikleri — mağaza ayarlarından ayrıca iptal et</li>
       </ul>
-
       <h2>Yardım</h2>
-      <p>
-        Uygulamaya erişemiyorsan,
-        <a href="mailto:joinqoop.support@gmail.com?subject=Qoop%20hesap%20silme%20talebi">joinqoop.support@gmail.com</a>
-        adresine hesabına bağlı e-posta ile yaz.
-      </p>
-      <p>
-        <a href="https://tasdemirebubekir347-star.github.io/qoop-privacy-policy/">Gizlilik Politikası</a>
-        ·
-        <a href="https://tasdemirebubekir347-star.github.io/legal/">Kullanım Koşulları</a>
-      </p>
+      <p>Uygulamaya erişemiyorsan, <a href="mailto:joinqoop.support@gmail.com?subject=Qoop%20hesap%20silme%20talebi">joinqoop.support@gmail.com</a> adresine hesabına bağlı e-posta ile yaz.</p>
+      <p><a href="https://tasdemirebubekir347-star.github.io/qoop-privacy-policy/">Gizlilik Politikası</a> · <a href="https://tasdemirebubekir347-star.github.io/legal/">Kullanım Koşulları</a></p>
+    </section>
+    <section id="de" class="lang-panel" lang="de">
+
+      <h1>Qoop-Konto löschen</h1>
+      <p>Du kannst dein Qoop-Konto und zugehörige Daten dauerhaft in der App löschen. Diese Seite erklärt, wie die Löschung funktioniert und was entfernt wird.</p>
+      <div class="card">
+        <strong>Löschung in der App (empfohlen)</strong>
+        <ol>
+          <li>Öffne die <strong>Qoop</strong>-App und melde dich an.</li>
+          <li>Gehe zu <strong>Einstellungen</strong> (Zahnrad-Symbol).</li>
+          <li>Scrolle zu <strong>Konto löschen</strong>.</li>
+          <li>Bestätige die Warnung und schließe ggf. die Verifizierung ab.</li>
+        </ol>
+      </div>
+      <h2>Was gelöscht wird</h2>
+      <ul>
+        <li>Dein Profil, der reservierte Benutzername und Kontoeinstellungen</li>
+        <li>Beiträge, Stories, Likes, Kommentare und zugehörige Aktivität</li>
+        <li>Direktnachrichten und Clan-Mitgliedschaften deines Kontos</li>
+        <li>Follower-/Following-Beziehungen und Blockierungen</li>
+      </ul>
+      <h2>Was vorübergehend bleiben kann</h2>
+      <ul>
+        <li>Backups oder Protokolle, die aus Sicherheits-, Betrugs- oder Rechtsgründen für begrenzte Zeit aufbewahrt werden</li>
+        <li>Inhalte, die bereits mit anderen Nutzern geteilt wurden (z. B. empfangene Nachrichten)</li>
+        <li>Aktive App-Store-/Google-Play-Abos — separat in den Store-Einstellungen kündigen</li>
+      </ul>
+      <h2>Hilfe benötigt?</h2>
+      <p>Wenn du die App nicht öffnen kannst, schreibe von der mit deinem Konto verknüpften Adresse an <a href="mailto:joinqoop.support@gmail.com?subject=Qoop%20Kontol%C3%B6schung">joinqoop.support@gmail.com</a>.</p>
+      <p><a href="https://tasdemirebubekir347-star.github.io/qoop-privacy-policy/">Datenschutzrichtlinie</a> · <a href="https://tasdemirebubekir347-star.github.io/legal/">Nutzungsbedingungen</a></p>
+    </section>
+    <section id="fr" class="lang-panel" lang="fr">
+
+      <h1>Supprimer votre compte Qoop</h1>
+      <p>Vous pouvez supprimer définitivement votre compte Qoop et les données associées depuis l’application. Cette page explique le fonctionnement de la suppression et ce qui est retiré.</p>
+      <div class="card">
+        <strong>Suppression dans l’app (recommandé)</strong>
+        <ol>
+          <li>Ouvrez l’application <strong>Qoop</strong> et connectez-vous.</li>
+          <li>Allez dans <strong>Paramètres</strong> (icône d’engrenage).</li>
+          <li>Descendez jusqu’à <strong>Supprimer le compte</strong>.</li>
+          <li>Confirmez l’avertissement et terminez la vérification si elle est demandée.</li>
+        </ol>
+      </div>
+      <h2>Ce qui est supprimé</h2>
+      <ul>
+        <li>Votre profil, la réservation du nom d’utilisateur et les paramètres du compte</li>
+        <li>Publications, stories, likes, commentaires et activité associée</li>
+        <li>Messages privés et appartenances aux clans liés à votre compte</li>
+        <li>Relations abonnés / abonnements et blocages</li>
+      </ul>
+      <h2>Ce qui peut rester temporairement</h2>
+      <ul>
+        <li>Sauvegardes ou journaux conservés pendant une période limitée pour la sécurité, la prévention de la fraude ou des obligations légales</li>
+        <li>Contenus déjà partagés avec d’autres utilisateurs (par exemple des messages qu’ils ont reçus)</li>
+        <li>Abonnements App Store / Google Play actifs — annulez-les séparément dans les réglages du store</li>
+      </ul>
+      <h2>Besoin d’aide ?</h2>
+      <p>Si vous n’avez pas accès à l’application, écrivez à <a href="mailto:joinqoop.support@gmail.com?subject=Suppression%20de%20compte%20Qoop">joinqoop.support@gmail.com</a> depuis l’adresse liée à votre compte.</p>
+      <p><a href="https://tasdemirebubekir347-star.github.io/qoop-privacy-policy/">Politique de confidentialité</a> · <a href="https://tasdemirebubekir347-star.github.io/legal/">Conditions d’utilisation</a></p>
+    </section>
+    <section id="es" class="lang-panel" lang="es">
+
+      <h1>Eliminar tu cuenta de Qoop</h1>
+      <p>Puedes eliminar de forma permanente tu cuenta de Qoop y los datos asociados desde la app. Esta página explica cómo funciona la eliminación y qué se borra.</p>
+      <div class="card">
+        <strong>Eliminación en la app (recomendado)</strong>
+        <ol>
+          <li>Abre la app <strong>Qoop</strong> e inicia sesión.</li>
+          <li>Ve a <strong>Ajustes</strong> (icono de engranaje).</li>
+          <li>Baja hasta <strong>Eliminar cuenta</strong>.</li>
+          <li>Confirma el aviso y completa la verificación si se te pide.</li>
+        </ol>
+      </div>
+      <h2>Qué se elimina</h2>
+      <ul>
+        <li>Tu perfil, la reserva del nombre de usuario y la configuración de la cuenta</li>
+        <li>Publicaciones, historias, me gusta, comentarios y actividad relacionada</li>
+        <li>Mensajes directos y pertenencia a clanes de tu cuenta</li>
+        <li>Relaciones de seguidores / seguidos y bloqueos</li>
+      </ul>
+      <h2>Qué puede permanecer temporalmente</h2>
+      <ul>
+        <li>Copias de seguridad o registros conservados durante un tiempo limitado por seguridad, prevención de fraude u obligaciones legales</li>
+        <li>Contenido ya compartido con otros usuarios (por ejemplo, mensajes que ellos recibieron)</li>
+        <li>Suscripciones activas de App Store / Google Play: cancélalas por separado en los ajustes de la tienda</li>
+      </ul>
+      <h2>¿Necesitas ayuda?</h2>
+      <p>Si no puedes acceder a la app, escribe a <a href="mailto:joinqoop.support@gmail.com?subject=Eliminaci%C3%B3n%20de%20cuenta%20Qoop">joinqoop.support@gmail.com</a> desde la dirección vinculada a tu cuenta.</p>
+      <p><a href="https://tasdemirebubekir347-star.github.io/qoop-privacy-policy/">Política de privacidad</a> · <a href="https://tasdemirebubekir347-star.github.io/legal/">Términos de servicio</a></p>
     </section>
   </main>
+
+  <script>
+  (function () {
+    var langs = ["en", "tr", "de", "fr", "es"];
+    function pick() {
+      var h = (location.hash || "").replace("#", "").toLowerCase();
+      if (langs.indexOf(h) >= 0) return h;
+      try {
+        var s = localStorage.getItem("qoop_legal_lang");
+        if (langs.indexOf(s) >= 0) return s;
+      } catch (e) {}
+      var n = (navigator.language || "en").slice(0, 2).toLowerCase();
+      return langs.indexOf(n) >= 0 ? n : "en";
+    }
+    function show(lang) {
+      document.querySelectorAll(".lang-panel").forEach(function (el) {
+        el.classList.toggle("is-active", el.id === lang);
+      });
+      document.querySelectorAll(".lang-switch a").forEach(function (a) {
+        a.classList.toggle("is-active", a.getAttribute("href") === "#" + lang);
+      });
+      document.documentElement.lang = lang;
+      try { localStorage.setItem("qoop_legal_lang", lang); } catch (e) {}
+    }
+    document.addEventListener("DOMContentLoaded", function () { show(pick()); });
+    window.addEventListener("hashchange", function () { show(pick()); });
+  })();
+  </script>
+
 </body>
 </html>
